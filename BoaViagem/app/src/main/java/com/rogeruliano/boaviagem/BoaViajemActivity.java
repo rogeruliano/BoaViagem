@@ -1,6 +1,7 @@
 package com.rogeruliano.boaviagem;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -27,8 +28,8 @@ public class BoaViajemActivity extends Activity {
         String usuarioInformado = usuario.getText().toString();
         String senhaInformada = senha.getText().toString();
 
-        if (usuarioInformado == "leitor" && senhaInformada == "123") {
-
+        if ("leitor".equals(usuarioInformado) && "123".equals(senhaInformada)) {
+            startActivity(new Intent(this,DashboardActivity.class));
         } else {
             String menssageErro = getString(R.string.erro_autenticacao);
             Toast toast = Toast.makeText(this, menssageErro, Toast.LENGTH_SHORT);
