@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2">
+        
+        <LinearLayout
+            android:background="#015488"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/nova_viagem"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView android:text="@string/destino" />
+        <EditText
+            android:id="@+id/destino"
+            android:inputType="text" >
+        </EditText>
+
+        <TextView android:text="@string/tipo_da_viagem"/>
+        <RadioGroup
+            android:id="@+id/tipoViagem"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/laser"
+                android:checked="true"
+                android:text="@string/laser"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/negocios"
+                android:text="@string/negocios"/>
+        </RadioGroup>
+    </TableLayout>
+</ScrollView>

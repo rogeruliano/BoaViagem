@@ -10,5 +10,9 @@
     <string name="minhas_viagens">Minhas Viagens</string>
     <string name="configuracoes">Configurações</string>
     <string name="erro_autenticacao">Login Inválido</string>
+    <string name="destino">Destino:</string>
     <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="tipo_da_viagem">Tipo da Viagem</string>
+    <string name="laser">Laser</string>
+    <string name="negocios">Negócios</string>
 </resources>

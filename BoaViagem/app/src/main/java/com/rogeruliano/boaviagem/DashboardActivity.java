@@ -21,6 +21,6 @@ public class DashboardActivity extends Activity {
     public void selecionarOpcao(View view) {
         TextView textView = (TextView) view;
         String opcao = "Opção: " + textView.getText().toString();
-        Toast.makeText(this, opcao, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, opcao, Toast.LENGTH_SHORT).show();
     }
 }
