@@ -15,4 +15,11 @@
     <string name="tipo_da_viagem">Tipo da Viagem</string>
     <string name="laser">Laser</string>
     <string name="negocios">Negócios</string>
+    <string name="data_saida">Data da Saída</string>
+    <string name="data_chegada">Data da Chegada</string>
+    <string name="selecionar">Selecionar</string>
+    <string name="orcamento">Orçamento:</string>
+    <string name="qtdpessoas">Qtd. Pessoas:</string>
+    <string name="salvar">Salvar</string>
+    <string name="title_activity_viagem">ViagemActivity</string>
 </resources>

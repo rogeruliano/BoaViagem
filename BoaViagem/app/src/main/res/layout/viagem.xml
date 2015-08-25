@@ -3,7 +3,8 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    >
 
     <TableLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -47,5 +48,46 @@
                 android:id="@+id/negocios"
                 android:text="@string/negocios"/>
         </RadioGroup>
+
+        <TableRow>
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/data_saida"/>
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/data_chegada"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/dataSaida"
+                android:onClick="selecionarData"
+                android:text="@string/selecionar"/>
+            <Button
+                android:id="@+id/dataChegada"
+                android:onClick="SelecionarData"
+                android:text="@string/selecionar"/>
+        </TableRow>
+
+        <TextView android:text="@string/orcamento"/>
+
+        <EditText
+            android:id="@+id/orcamento"
+            android:inputType="numberDecimal"/>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/qtdpessoas"/>
+            <EditText
+                android:id="@+id/qtdPessoas"
+                android:inputType="number"/>
+        </TableRow>
+
+        <Button
+            android:onClick="salvarViagem"
+            android:text="@string/salvar"/>
+
+
     </TableLayout>
 </ScrollView>

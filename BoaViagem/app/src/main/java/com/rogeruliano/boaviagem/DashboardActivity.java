@@ -1,6 +1,7 @@
 package com.rogeruliano.boaviagem;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,8 +20,10 @@ public class DashboardActivity extends Activity {
     }
 
     public void selecionarOpcao(View view) {
-        TextView textView = (TextView) view;
-        String opcao = "Opção: " + textView.getText().toString();
-        Toast.makeText(this, opcao, Toast.LENGTH_SHORT).show();
+        switch (view.getId()) {
+            case R.id.nova_viagem:
+                startActivity(new Intent(this, ViagemActivity.class));
+                break;
+        }
     }
 }
